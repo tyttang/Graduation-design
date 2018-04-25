@@ -24,4 +24,9 @@ class LogoutPage
     self.logout_button?
   end
 
+  def login_out_click
+    self.logout_button_element.click
+    self.logout_popup_element.button(id: "Yes").click
+  end
+
 end

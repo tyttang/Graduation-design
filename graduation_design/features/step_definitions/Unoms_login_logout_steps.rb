@@ -42,7 +42,7 @@ Then /^I can see the '([^"]*)' button on the login page$/ do |msg|
   on_page(LoginPage).forget_password_text.should include msg
 end
 
-Then /^I will see the notification "([^"]*)"$/ do |login_notification|
+Then /^I will see the notification "([^']*)"$/ do |login_notification|
   # on_page(LoginPage).login_notification_text.should include login_notification
   on_page(LoginPage).login_notification.should include login_notification
 end
