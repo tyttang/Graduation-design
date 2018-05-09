@@ -41,7 +41,7 @@ And /^I login root should see the unoms existence$/ do
     on_page(HomePage).unoms_homepage_exist
 end
 
-Then /^I will see the information '([^"]*)'$/ do |msg|
+Then /^I will see the information "([^']*)"$/ do |msg|
     on_page(LicensePage).upload_information.should include msg
 end
 

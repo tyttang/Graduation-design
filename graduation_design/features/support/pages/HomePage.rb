@@ -4,9 +4,9 @@ class HomePage
   div(:user_menu, id: "node_menu_user")
   span(:logout_button, id: "logout_img")
   span(:username_location, class: "avatar-name")
-  div(:unodm_homepage, class: "top dm")
-  div(:unotm_homepage, class: "top tm")
-  div(:unoms_homepage, class: "top ms")
+  div(:unodm_homepage, class: ['top', 'dm'])
+  div(:unotm_homepage, class: ['top', 'tm'])
+  div(:unoms_homepage, class: ['top', 'ms'])
 
   def username_text
     self.username_location

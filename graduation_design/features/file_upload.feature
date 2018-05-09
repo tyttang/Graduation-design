@@ -6,7 +6,7 @@ Scenario: upload incorrect file
     Given I will go to Unoms login page and login root
     When I click the license menu and upload the incorrect file '/home/tyt/Files/dailywork/3min.adoc'
     And I click the save button
-    Then I will see the information 'Malform license file'
+    Then I will see the information "Malform license file"
 
 Scenario: upload the unodm file
   Given I will go to Unoms login page and login root

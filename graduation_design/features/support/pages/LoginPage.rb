@@ -24,10 +24,6 @@ class LoginPage
   def login_button_click
     self.login_button_element.wait_until_present
   end
-  # def login_notification_text
-  #   # self.pop_login_notification?
-  #   self.login_notification_element.text
-  # end
 
   def forget_password_text
     self.forget_password_element.text
